@@ -1,0 +1,344 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: huu cong, HUST, LIC=RC9QD-8U0VA-SY7VA-1XFLN-4DUAH-AHK82
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\cong\Desktop\DO_AN_TN - Copy2\DO_AN_TN - Copy1\MDK-ARM\LCD.uvprojx
+Project File Date:  12/01/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LCD'
+assembling startup_stm32f103xb.s...
+compiling Kalman.c...
+compiling lcd16x2.c...
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\lcd16x2.c(5): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(EN_Port,EN_Pin,1);
+..\Src\lcd16x2.c(7): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(EN_Port,EN_Pin,0);	
+..\Src\lcd16x2.c(13): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D4_Port,D4_Pin,Data&0x01);
+..\Src\lcd16x2.c(14): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D5_Port,D5_Pin,(Data>>1)&0x01);
+..\Src\lcd16x2.c(15): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D6_Port,D6_Pin,(Data>>2)&0x01);
+..\Src\lcd16x2.c(16): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(D7_Port,D7_Pin,(Data>>3)&0x01);	
+..\Src\lcd16x2.c(36): warning:  #188-D: enumerated type mixed with another type
+    	HAL_GPIO_WritePin(RS_Port,RS_Pin,0);
+..\Src\lcd16x2.c(70): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(RS_Port,RS_Pin,1);
+..\Src\lcd16x2.c(72): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(RS_Port,RS_Pin,0);
+..\Src\lcd16x2.c(81): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\lcd16x2.c: 15 warnings, 0 errors
+compiling goc_pin.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/goc_pin.h(8): warning:  #1295-D: Deprecated declaration get_n - give arg types
+  int get_n();
+../Inc/goc_pin.h(9): warning:  #1295-D: Deprecated declaration get_PA - give arg types
+  int get_PA();
+../Inc/goc_pin.h(10): warning:  #1295-D: Deprecated declaration get_TA - give arg types
+  int get_TA();
+../Inc/goc_pin.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\goc_pin.c(32): warning:  #940-D: missing return statement at end of non-void function "goc_pin" 
+  }
+..\Src\goc_pin.c: 9 warnings, 0 errors
+compiling mppt.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/mppt.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\mppt.c: 5 warnings, 0 errors
+compiling mpu6050_kalman.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/mpu6050_kalman.h(17): warning:  #1295-D: Deprecated declaration MPU6050_Init - give arg types
+  void MPU6050_Init();
+../Inc/mpu6050_kalman.h(18): warning:  #1295-D: Deprecated declaration MPU6050_Read_Gyro - give arg types
+  void MPU6050_Read_Gyro();
+../Inc/mpu6050_kalman.h(19): warning:  #1295-D: Deprecated declaration init_kalman_mpu6050 - give arg types
+  void init_kalman_mpu6050();
+../Inc/mpu6050_kalman.h(20): warning:  #1295-D: Deprecated declaration kalman_mpu6050 - give arg types
+  void kalman_mpu6050();
+../Inc/mpu6050_kalman.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\mpu6050_kalman.c: 9 warnings, 0 errors
+compiling usb_device.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/usb_device.c: 4 warnings, 0 errors
+compiling usbd_desc.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/usbd_desc.c: 4 warnings, 0 errors
+compiling usbd_conf.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/usbd_conf.c: 4 warnings, 0 errors
+compiling main.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/goc_pin.h(8): warning:  #1295-D: Deprecated declaration get_n - give arg types
+  int get_n();
+../Inc/goc_pin.h(9): warning:  #1295-D: Deprecated declaration get_PA - give arg types
+  int get_PA();
+../Inc/goc_pin.h(10): warning:  #1295-D: Deprecated declaration get_TA - give arg types
+  int get_TA();
+../Inc/goc_pin.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/mpu6050_kalman.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Inc/mppt.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\main.c(150): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,1);
+..\Src\main.c(151): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0);
+..\Src\main.c(156): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,1);
+..\Src\main.c(157): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,1);
+..\Src\main.c(162): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,0);	
+..\Src\main.c(163): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0);	
+..\Src\main.c(181): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,1);
+..\Src\main.c(182): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0);
+..\Src\main.c(187): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,1);
+..\Src\main.c(188): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,1);
+..\Src\main.c(193): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,0);	
+..\Src\main.c(194): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0);	
+..\Src\main.c(202): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,1);
+..\Src\main.c(203): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,1);
+..\Src\main.c(207): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,0);	
+..\Src\main.c(208): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0); 
+..\Src\main.c(214): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(nguon_GPIO_Port,nguon_Pin,0);	
+..\Src\main.c(215): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(chieu_GPIO_Port,chieu_Pin,0);
+..\Src\main.c(318): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(K1_GPIO_Port,K1_Pin,1);//noi PV
+..\Src\main.c(332): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(K1_GPIO_Port,K1_Pin,0);//ngat PV
+..\Src\main.c(337): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(K2_GPIO_Port,K2_Pin,1);//noi tai
+..\Src\main.c(341): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(K2_GPIO_Port,K2_Pin,0);//ngat tai
+..\Src\main.c(548): warning:  #223-D: function "init_kalman_mpu6050" declared implicitly
+  	init_kalman_mpu6050();
+..\Src\main.c(549): warning:  #223-D: function "kalman_mpu6050" declared implicitly
+    for(int i=0;i<=300;i++){kalman_mpu6050();}
+..\Src\main.c(569): warning:  #223-D: function "kalman_mpu6050" declared implicitly
+  		kalman_mpu6050();
+..\Src\main.c(968): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(GPIOA, chieu_Pin|nguon_Pin, GPIO_PIN_RESET);
+..\Src\main.c(972): warning:  #188-D: enumerated type mixed with another type
+                            |D5_Pin|D4_Pin|EN_Pin|RS_Pin, GPIO_PIN_RESET);
+..\Src\main.c: 37 warnings, 0 errors
+compiling usbd_cdc_if.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/usbd_cdc_if.c: 4 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_it.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/stm32f1xx_it.c: 4 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Src/stm32f1xx_hal_msp.c: 4 warnings, 0 errors
+compiling stm32f1xx_hal_pcd_ex.c...
+compiling stm32f1xx_hal_pcd.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_ll_usb.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+compiling usbd_core.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c: 4 warnings, 0 errors
+compiling usbd_ctlreq.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c: 4 warnings, 0 errors
+compiling usbd_ioreq.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c: 4 warnings, 0 errors
+compiling usbd_cdc.c...
+../Inc/lcd16x2.h(15): warning:  #1295-D: Deprecated declaration LCD_Enable - give arg types
+  void LCD_Enable();
+../Inc/lcd16x2.h(18): warning:  #1295-D: Deprecated declaration LCD_Clear - give arg types
+  void LCD_Clear();
+../Inc/lcd16x2.h(19): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+../Inc/lcd16x2.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=39536 RO-data=1064 RW-data=808 ZI-data=8672  
+FromELF: creating hex file...
+"LCD\LCD.axf" - 0 Error(s), 115 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_LCD
+  C:\Users\cong\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\cong\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Build Time Elapsed:  00:01:07
+</pre>
+</body>
+</html>
